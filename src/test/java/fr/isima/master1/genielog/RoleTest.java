@@ -12,16 +12,16 @@ class RoleTest {
 
         @Test
         void cannotCreatNullName() {
-            assertThatThrownBy(() -> {new Role(null);}).isInstanceOf(IllegalArgumentException.class)
+            assertThatThrownBy(() -> {new Role(null);}).isInstanceOf(IllegalArgumentException.class);
 
         }
         @Test
         void cannotCreatEmptyName() {
-            assertThatThrownBy(() -> {new Role("");}).isInstanceOf(IllegalArgumentException.class)
+            assertThatThrownBy(() -> {new Role("");}).isInstanceOf(IllegalArgumentException.class);
         }
         @Test
         void cannotCreatBalnkName() {
-            assertThatThrownBy(() -> {new Role("  ");}).isInstanceOf(IllegalArgumentException.class)
+            assertThatThrownBy(() -> {new Role("  ");}).isInstanceOf(IllegalArgumentException.class);
 
         }
         @Test
@@ -37,16 +37,30 @@ class RoleTest {
             assertThat(role.equals(role));
         }
         @Test
-        void cannotCreatEmptyName() {
-
+        void roleMustBeEqualToAnotherRoleWhenTheyHaveTheSameName() {
+            var role1 = new Role("dev");
+            var role2 = new Role("dev");
+            assertThat(role1.equals(role2));
         }
         @Test
-        void cannotCreatBalnkName() {
-
+        void IsReflexive() {
+            var role1 = new Role("dev");
+            var role2 = new Role("dev");
+            assertThat(role1.equals(role2));
+            assertThat(role2.equals(role1));
         }
         @Test
-        void cannotCreatNameWithDigit() {
+        void mustBeDifferentIfTheNameIsDifferent() {
+            var role1 = new Role("dev");
+            var role2 = new Role("manager");
+            assertThat(!role1.equals(role2));
+        }
 
+        @Test
+        void hashCodeOfTheSameRolesMustBeTheSame() {
+            var role1 = new Role("dev");
+            var role2 = new Role("dev");
+            assertThat(role1.hashCode()).isEqualTo(role2.hashCode());
         }
     }
 
