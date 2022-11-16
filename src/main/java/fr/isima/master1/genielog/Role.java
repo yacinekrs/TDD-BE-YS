@@ -4,6 +4,7 @@ public class Role {
     String name;
 
     public Role (String name){
+        if( )
         this.name = name;
     }
 }
