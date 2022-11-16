@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ae447766-c427-44da-93d9-0ae6125dd82a" name="Changes" comment="">
+    <list default="true" id="ae447766-c427-44da-93d9-0ae6125dd82a" name="Changes" comment="add some test for Role">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/fr/isima/master1/genielog/RoleTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/fr/isima/master1/genielog/RoleTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,5 +62,9 @@
       <updated>1668012534608</updated>
     </task>
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="add some test for Role" />
+    <option name="LAST_COMMIT_MESSAGE" value="add some test for Role" />
   </component>
 </project>
