@@ -4,7 +4,7 @@ public class Role {
     String name;
 
     public Role (String name){
-        if( )
+        if
         this.name = name;
     }
 }
